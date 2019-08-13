@@ -55,7 +55,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "battle-net-token-api"
+name = "battle-net-oauth"
 version = "0.1.0"
 dependencies = [
  "rayon 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",

@@ -1,5 +1,5 @@
 [package]
-name = "battle-net-token-api"
+name = "battle-net-oauth"
 version = "0.1.0"
 authors = ["Shempignon <nicolas@pointndots.com>"]
 edition = "2018"
