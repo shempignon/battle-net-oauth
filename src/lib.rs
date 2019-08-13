@@ -8,6 +8,11 @@ pub struct OAuthToken {
     pub expires_in: usize,
 }
 
+/// To retrieve a token, you need to provide your client_id and client_secret
+///
+/// ```rust
+/// let token = battle_net_oauth::get_oauth_token("client_id", "client_secret");
+/// ```
 pub fn get_oauth_token(client_id: &str, client_secret: &str) -> Result<OAuthToken, Error> {
     let token_client = Client::new();
 

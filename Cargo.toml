@@ -3,7 +3,12 @@ name = "battle-net-oauth"
 version = "0.1.0"
 authors = ["Shempignon <nicolas@pointndots.com>"]
 edition = "2018"
-
+documentation = "https://docs.rs/battle-net-oauth/"
+readme = "README.md"
+repository = "https://github.com/shempignon/battle-net-oauth"
+keywords = ["api", "oauth", "battlenet", "blizzard"]
+license = "MIT"
+description = "Rust crate to request a Battle.net OAuth token"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
