@@ -1,6 +1,6 @@
 [package]
 name = "battle-net-oauth"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Shempignon <nicolas@pointndots.com>"]
 edition = "2018"
 documentation = "https://docs.rs/battle-net-oauth/"
@@ -15,3 +15,6 @@ description = "Rust crate to request a Battle.net OAuth token"
 reqwest = "0.9"
 serde = "1.0"
 rayon = "1.0"
+
+[badges]
+travis-ci = { repository = "shempignon/battle-net-oauth" }
