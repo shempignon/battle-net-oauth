@@ -1,6 +1,6 @@
 [package]
 name = "battle-net-oauth"
-version = "0.1.3"
+version = "0.1.4"
 authors = ["Shempignon <nicolas@pointndots.com>"]
 edition = "2018"
 documentation = "https://docs.rs/battle-net-oauth/"
