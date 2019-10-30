@@ -1,7 +1,7 @@
 use reqwest::{Client, Error};
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 
-#[derive(Deserialize, Debug)]
+#[derive(Deserialize, Debug, Serialize)]
 pub struct OAuthToken {
     pub access_token: String,
     pub token_type: String,
