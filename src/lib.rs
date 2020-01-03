@@ -1,6 +1,5 @@
 extern crate reqwest;
 extern crate serde;
-extern crate tokio;
 
 use serde::{Deserialize, Serialize};
 
@@ -16,7 +15,6 @@ pub struct OAuthToken {
 /// ```rust
 /// let token = battle_net_oauth::get_oauth_token("client_id", "client_secret");
 /// ```
-#[tokio::main]
 pub async fn get_oauth_token(
     client_id: &str,
     client_secret: &str,
