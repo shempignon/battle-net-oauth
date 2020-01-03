@@ -1,8 +1,8 @@
 extern crate reqwest;
-extern crate tokio;
 extern crate serde;
+extern crate tokio;
 
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct OAuthToken {
@@ -17,10 +17,14 @@ pub struct OAuthToken {
 /// let token = battle_net_oauth::get_oauth_token("client_id", "client_secret");
 /// ```
 #[tokio::main]
-pub async fn get_oauth_token(client_id: &str, client_secret: &str) -> Result<OAuthToken, Box<dyn std::error::Error>> {
+pub async fn get_oauth_token(
+    client_id: &str,
+    client_secret: &str,
+) -> Result<OAuthToken, Box<dyn std::error::Error>> {
     let client = reqwest::Client::new();
 
-    let resp: OAuthToken = client.post("https://eu.battle.net/oauth/token")
+    let resp: OAuthToken = client
+        .post("https://eu.battle.net/oauth/token")
         .basic_auth(client_id, Some(client_secret))
         .form(&[("grant_type", "client_credentials")])
         .send()
