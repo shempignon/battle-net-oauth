@@ -1,6 +1,3 @@
-extern crate reqwest;
-extern crate serde;
-
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Deserialize, Serialize)]
