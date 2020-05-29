@@ -19,7 +19,7 @@ pub async fn get_oauth_token(
 ) -> Result<OAuthToken, Box<dyn std::error::Error>> {
     let client = reqwest::Client::new();
     let url = if region.to_lowercase() == "cn" {
-        "https://www.battlenet.com.cn/oauth/authorize".to_string()
+        "https://www.battlenet.com.cn/oauth/token".to_string()
     } else {
         format!("https://{}.battle.net/oauth/token", region.to_lowercase())
     };
