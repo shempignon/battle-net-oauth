@@ -3,11 +3,4 @@
 Battle.net OAuth token
 ===
 
-Installation
----
-
-```
-battle-net-oauth = "0.1"
-```
-
 [Documentation](https://docs.rs/battle-net-oauth/)
